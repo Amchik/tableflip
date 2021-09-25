@@ -2,7 +2,7 @@
 bin/
 obj/
 
-# Test table. For table examples see examples/ folder
+# Test table. For table examples see example/ folder
 /test
 
 # Generate new compile_commands.json via bear:

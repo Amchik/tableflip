@@ -1,0 +1,56 @@
+tableflip
+-----------
+A simple (lol, no) program to format tables like that:
+
+                            [file: example/pls]
+| Language name           | 1st run | 5th run |
+|-------------------------|---------|---------|
+| Python (default)        | 82.322  | 83.084  |
+| Ruby                    | 54.587  | 55.199  |
+| C# (.NET 5)             | 4.845   | 4.689   |
+| Python (numba)          | 300.802 | 3.172   |
+| JavaScript (node.js 16) | 5       | 1       |
+| C (gcc)                 | 2.757   | 2.816   |
+| Crystal                 | 1.259   | 1.018   |
+| Rust                    | 0.944   | 1.010   |
+| C (clang)               | 0.744   | 0.735   |
+
+1. Usage
+--------
+
+Generate a table from file:
++------------------+
+| tableflip <file> |
++------------------+
+
+2. Tables syntax
+----------------
+First line are header.
+Line example:
++----------------------------------+
+| "First column" "2nd..." "3rd..." |
++----------------------------------+
+
+Note: max columns count depends on columns count
+  in first row (header).
+If header row contains 3 columns, but Nth row contains
+  2 (or less) columns, missing colums will be considered
+  empty.
+
+3. To-Do
+--------
+3.1. csv parser
+3.2. no color output
+
+4. Used libs
+------------
+
+DNM-way: less libs, more shit
+
+4.1. matestr.h
+  From Amchik/snus (edited in not published yet autumn)
+
+5. License and copyrights
+-------------------------
+Unlicense. See /license
+

@@ -1,0 +1,11 @@
+"Language name" "1st run" "5th run"
+
+"Python (default)" "82.322" "83.084"
+"Ruby" "54.587" "55.199"
+"C# (.NET 5)" "4.845" "4.689"
+"Python (numba)" "300.802" "3.172"
+"JavaScript (node.js 16)" "5" "1"
+"C (gcc)" "2.757" "2.816"
+"Crystal" "1.259" "1.018"
+"Rust" "0.944" "1.010"
+"C (clang)" "0.744" "0.735"
