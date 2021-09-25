@@ -1,0 +1,11 @@
+.cache/
+bin/
+obj/
+
+# Test table. For table examples see examples/ folder
+/test
+
+# Generate new compile_commands.json via bear:
+# `TARGET=DEBUG bear -- make` (or `...bear make`)
+/compile_commands.json
+
