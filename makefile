@@ -27,7 +27,7 @@ else
 	TARGET := RELEASE
 endif
 
-_CFLAGS_LOG = -Wall -Wextra -pedantic -Wpedantic -Werror
+_CFLAGS_LOG = -Wall -Wextra -pedantic -Wpedantic
 _CFLAGS_DEFINES = -Isrc/ -D _DEFAULT_SOURCE
 ifeq ($(USE_THREADS), 1)
 	_CFLAGS_THREADS := -pthread
@@ -44,6 +44,12 @@ _RELEASE_CFLAGS_DEFINES =
 _RELEASE_LDFLAGS = 
 _RELEASE_CC = $(CC)
 _RELEASE_STD = $(_STD)
+
+_CLANG_CFLAGS = -O3 -flto=thin -march=native -pipe
+_CLANG_CFLAGS_DEFINES =
+_CLANG_LDFLAGS = -Wl,-O2 -Wl,--as-needed
+_CLANG_CC = clang
+_CLANG_STD = $(_STD)
 
 _DEBUG_CFLAGS = -pipe -O0 -g
 _DEBUG_CFLAGS_DEFINES =
