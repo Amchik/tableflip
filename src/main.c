@@ -37,7 +37,10 @@ int main(int argc, char** argv) {
 
 	table = tfparse(file_contents);
 
-	if (table.code != tfe_none) {
+	if (table.node == 0) {
+		fprintf(stderr, "Error: empty file passed\n");
+		return(3);
+	}	else if (table.code != tfe_none) {
 		tferror(table, file_contents);
 
 		return(3 + table.code);
